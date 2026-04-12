@@ -1,3 +1,4 @@
+// Student Routes - full CRUD with search filter pagination
 const express = require('express');
 const { body, validationResult, query } = require('express-validator');
 const Student = require('../models/Student');
