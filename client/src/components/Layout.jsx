@@ -1,3 +1,4 @@
+// Layout - sidebar navigation and topbar shell
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { LayoutDashboard, Users, ClipboardList, LogOut, GraduationCap, Menu } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
