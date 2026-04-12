@@ -1,3 +1,4 @@
+// API utility - Axios instance with JWT interceptor
 import axios from 'axios';
 
 const api = axios.create({
