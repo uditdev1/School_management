@@ -1,3 +1,4 @@
+// Modal - reusable modal with ESC and backdrop close
 import { X } from 'lucide-react';
 import { useEffect } from 'react';
 
