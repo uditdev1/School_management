@@ -59,18 +59,20 @@ mongoose
 async function seedAdmin() {
   try {
     const User = require('./models/User');
-    const bcrypt = require('bcryptjs');
-    
-    // Delete any existing admin and recreate fresh
+
+    // Delete old admin and recreate
     await User.deleteMany({ email: 'admin@school.com' });
-    
-    const hashed = await bcrypt.hash('Admin@123', 10);
-    await User.create({
+
+    // Don't hash manually — the User model pre-save hook handles it
+    const admin = new User({
       name: 'Super Admin',
       email: 'admin@school.com',
-      password: hashed,
+      password: 'Admin@123',
       role: 'admin',
     });
+
+    await admin.save(); // pre-save hook will hash the password correctly
+
     console.log('Admin created → admin@school.com / Admin@123');
   } catch (err) {
     console.error('Seed error:', err.message);
