@@ -1,3 +1,4 @@
+// Auth Routes - login, logout, change-password endpoints
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const { body, validationResult } = require('express-validator');
