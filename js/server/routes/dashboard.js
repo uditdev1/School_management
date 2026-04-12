@@ -1,3 +1,4 @@
+// Dashboard Routes - stats and analytics aggregation
 const express = require('express');
 const Student = require('../models/Student');
 const Task = require('../models/Task');
