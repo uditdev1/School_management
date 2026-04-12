@@ -1,3 +1,4 @@
+// User Model - handles admin authentication
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
