@@ -1,3 +1,4 @@
+// Task Model - manages assignments and homework
 const mongoose = require('mongoose');
 
 const taskSchema = new mongoose.Schema(
