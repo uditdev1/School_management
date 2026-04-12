@@ -1,3 +1,4 @@
+// Student Model - stores student profile data
 const mongoose = require('mongoose');
 
 const studentSchema = new mongoose.Schema(
