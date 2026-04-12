@@ -1,3 +1,4 @@
+// ConfirmDialog - delete confirmation modal component
 import { AlertTriangle } from 'lucide-react';
 import Modal from './Modal';
 
